@@ -18,6 +18,6 @@ public class OrderServiceApplication {
 
     @GetMapping
     public List<Order> fetchOrders() {
-        return List.of(Order.builder().name("Chicken").price(12.34f).id(1).build());
+        return List.of(Order.builder().name("Chicken").price(12.34f).id(1).build(),Order.builder().name("Mutton").price(12.34f).id(1).build());
     }
 }
